@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /workspaces/pa-ad2/leaf_anomaly/src /workspaces/pa-ad2/leaf_anomaly/data/reference /workspaces/pa-ad2/leaf_anomaly/data/test /workspaces/pa-ad2/leaf_anomaly/models /workspaces/pa-ad2/leaf_anomaly/output)",
+      "Bash(touch /workspaces/pa-ad2/leaf_anomaly/data/reference/.gitkeep /workspaces/pa-ad2/leaf_anomaly/data/test/.gitkeep /workspaces/pa-ad2/leaf_anomaly/models/.gitkeep /workspaces/pa-ad2/leaf_anomaly/output/.gitkeep)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

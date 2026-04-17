@@ -1,0 +1,39 @@
+{
+  "name": "Claude Code Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+ 
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+ 
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+ 
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylint",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "usernamehw.errorlens",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "christian-kohler.path-intellisense",
+        "wayou.vscode-todo-highlight",
+        "pkief.material-icon-theme"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.python"
+        }
+      }
+    }
+  },
+ 
+  "remoteUser": "vscode"
+}
