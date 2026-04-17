@@ -3,3 +3,4 @@ leaf_anomaly/models/padim_leaf2.pkl
 leaf_anomaly/models/padim_leaf.pkl
 models/*.pkl
 models/*.pkl
+leaf_anomaly/models/padim_leaf_mono.pkl

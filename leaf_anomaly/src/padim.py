@@ -23,6 +23,9 @@ N_FEATURES_REDUCED = 100
 
 _transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
+    # Convert to grayscale and replicate to 3 channels so ResNet18 receives the
+    # correct input shape while being blind to colour — shapes and textures only.
+    transforms.Grayscale(num_output_channels=3),
     transforms.ToTensor(),
     # ImageNet normalization — without this ResNet produces nonsense activations
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
